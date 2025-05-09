@@ -1,12 +1,12 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    background: #f4f4f4;
+    background: linear-gradient(to bottom right, #1A0024, #700979, #7B00FF);
 }
 
 .header {
     padding: 20px;
-    background: linear-gradient(to right, #ff0000, #ff9900, #ffcc00);
+    background: linear-gradient(to right, #1A0024, #700979, #7B00FF);
     color: white;
     font-weight: bold;
     font-size: 24px;
@@ -21,7 +21,7 @@ body {
 
 .section h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 .option {
@@ -70,8 +70,8 @@ body {
 }
 
 .tab.active {
-    color: #d32f2f;
-    border-bottom: 2px solid #d32f2f;
+    color: #7B00FF;
+    border-bottom: 2px solid #7B00FF;
 }
 
 .metodo {
@@ -93,14 +93,18 @@ body {
 
 .btn-vermelho {
     width: 100%;
-    background: #d32f2f;
+    background: linear-gradient(to right, #1A0024, #700979, #7B00FF);
     color: white;
+    padding: 12px;
     border: none;
-    border-radius: 12px;
-    padding: 15px;
-    margin-top: 20px;
+    border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-vermelho:hover {
+    background: linear-gradient(to right, #1A0024, #700979, #7B00FF);
 }
 
 .aba-conteudo {
@@ -143,26 +147,11 @@ form input {
     font-size: 16px;
 }
 
-.btn-vermelho {
-    background-color: #d62828;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-vermelho:hover {
-    background-color: #b71c1c;
-}
-
-.voltar{
+.voltar {
     position: fixed;
-    top:10px;
-    left:20px;
-    background-color: #d62828;
+    top: 10px;
+    left: 20px;
+    background: linear-gradient(to right, #1A0024, #700979, #7B00FF);
     color: white;
     padding: 12px 20px;
     border-radius: 30px;
@@ -170,12 +159,12 @@ form input {
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: background-color 0.3s;
+    transition: background 0.3s;
     z-index: 1000;
-  }
+}
 
 .voltar:hover {
-    background-color: #a31c1c;
+    background: linear-gradient(to right, #1A0024, #700979, #7B00FF);
 }
 
 .planos {
@@ -184,41 +173,43 @@ form input {
     padding: 40px 20px;
     background: #fff;
     flex-wrap: wrap;
-  }
-  
-  .plano {
+}
+
+.plano {
     flex: 1;
     max-width: 300px;
     margin: 15px;
     padding: 20px;
     border-radius: 12px;
     border: 1px solid #ddd;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     text-align: center;
-  }
-  
-  .plano h3 {
+}
+
+.plano h3 {
     margin-bottom: 10px;
-    color: #ff0000;
-  }
-  
-  .plano ul {
+    color: #7B00FF;
+}
+
+.plano ul {
     list-style: none;
     padding: 0;
     text-align: left;
     margin: 20px 0;
-  }
-  
-  .plano ul li {
+}
+
+.plano ul li {
     margin-bottom: 8px;
-  }
-  
-  .plano button {
-    background: linear-gradient(to right, #ff0000, #ffcc00);
+}
+
+.plano button {
+    background: linear-gradient(to right, #1A0024, #700979, #7B00FF);
     border: none;
     padding: 10px 20px;
     border-radius: 30px;
     color: white;
     font-weight: bold;
     cursor: pointer;
-  }
+}
+
+
